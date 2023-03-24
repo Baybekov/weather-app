@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,900,300);
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #263238;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  color: #fff;
+}
+
+li {
+  list-style-type: none;
+}
+
+
+.widget-container {
+  max-width: 600px;
+  display: flex;
+  background-color: #313e45;
+  border-radius: 25px;
+  margin: 0 auto;
+  flex-direction: column;
+  &__top {
+    display: flex;
+    border-bottom: 5px solid #263238;
+    &__left {
+
+      width: 50%;
+      padding-left: 30px;
+    }
+    &__right {
+      width: 50%;
+      text-align: center;
+      p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        svg {
+          min-height: 130px;
+          padding-bottom: 15px;
+        }
+      }
+    }
+  }
+  &__bottom {
+    display: flex;
+    margin: 15px;
+    &-left {
+      width: 30%;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      border-right: 5px solid #263238;
+      span {
+        font-size: 26px;
+        &:nth-child(2) {
+          padding-right: 15px;
+        }
+        &:nth-child(3) {
+          padding-right: 15px;
+        }
+        &:nth-child(5) {
+          padding-right: 15px;
+        }
+      }
+    }
+    &-right {
+      width: 70%;
+      display: flex;
+      padding: 15px;
+      p{
+        margin: 0;
+        padding: 0;
+        white-space:nowrap;
+        font-size: 14px;
+      }
+      &__time {
+        padding-right: 15px;
+        p {
+          li {
+            padding-top: 10px;
+          }
+        }
+      }
+      &__weather {
+        padding-right: 15px;
+        p {
+          p {
+            padding-top: 10px;
+            svg {
+              padding-right: 10px;
+            }
+          }
+        }
+      }
+      &__tempMax {
+        padding-right: 15px;
+        text-align: center;
+        p {
+          li {
+            padding-top: 10px;
+          }
+        }
+      }
+      &__tempMin {
+        text-align: center;
+        p {
+          li {
+            padding-top: 10px;
+          }
+        }
+      }
+    }
+  }
+  
+}
+
